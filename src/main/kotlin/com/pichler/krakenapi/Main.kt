@@ -7,9 +7,9 @@ import org.funktionale.either.Either
  * Created by Patrick Pichler on 7/7/2017.
  */
 fun main(args: Array<String>) {
-  val api = KrakenAPI.getAPI("https://api.kraken.com/0/public/")
+  val api = KrakenAPI.getAPI("https://api.kraken.com/0").public
 
-  val response = api.getOHLC("EOSEUR", 1).execute()
+  val response = api.getRecentTrades("etheur").execute()
 
   println(response)
 

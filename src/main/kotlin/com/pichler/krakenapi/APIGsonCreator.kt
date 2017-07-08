@@ -15,6 +15,12 @@ object APIGsonCreator {
           .registerTypeAdapter<TimePairDetail>(volumeDetailAdapter)
           .registerTypeAdapter<OHLCResult>(OHLCResultTypeAdapter)
           .registerTypeAdapter<OHLCEntry>(OHLCEntryTypeAdapter)
+          .registerTypeAdapter<OrderBookResult>(orderBookResultTypeAdapter)
+          .registerTypeAdapter<OrderBookEntry>(orderBookEntryTypeAdapter)
+          .registerTypeAdapter<RecentTradesResult>(recentTradeResultTypeAdapter)
+          .registerTypeAdapter<RecentTradesEntry>(recentTradeEntryTypeAdapter)
+          .registerTypeAdapter<SpreadDataResult>(spreadDataResultTypeAdapter)
+          .registerTypeAdapter<SpreadDataEntry>(spreadDataEntryTypeAdapter)
           .create()
 
 }
