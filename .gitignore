@@ -1,6 +1,7 @@
 .idea
 build
 local.settings
+local.properties
 /*.iws
 /*.ipr
 /*.iml
